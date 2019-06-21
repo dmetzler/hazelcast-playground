@@ -26,6 +26,4 @@ public class WebStatusApp extends ResourceConfig {
         packages("com.dmetzler.hazelcast.jaxrs");
     }
 
-
-
 }
