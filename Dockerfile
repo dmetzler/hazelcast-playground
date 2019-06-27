@@ -5,4 +5,5 @@ From tomcat:8-jre8
 MAINTAINER "Damien Metzler <dmetzler@gmail.com">
 
 # Copy to images tomcat path
-ADD target/hazelcast-web-status-*.war /usr/local/tomcat/webapps/status.war
+RUN rm -rf /usr/local/tomcat/webapps/ROOT
+ADD target/demo.war /usr/local/tomcat/webapps/ROOT.war
